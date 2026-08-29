@@ -1,0 +1,44 @@
+name: VivoControl
+options:
+  bundleIdPrefix: com.agileops
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+packages:
+  Shared:
+    path: Shared
+targets:
+  VivoControl:
+    type: application
+    platform: iOS
+    sources: [iOS/VivoControl]
+    dependencies:
+      - package: Shared
+      - target: VivoControlWatch
+    info:
+      path: iOS/VivoControl/Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleDisplayName: VivoControl
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.agileops.vivocontrol
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGNING_ALLOWED: "NO"
+  VivoControlWatch:
+    type: application
+    platform: watchOS
+    sources: [Watch/VivoControlWatch]
+    dependencies:
+      - package: Shared
+    info:
+      path: Watch/VivoControlWatch/Info.plist
+      properties:
+        CFBundleDisplayName: VivoControl
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: com.agileops.vivocontrol
+        WKRunsIndependentlyOfCompanionApp: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.agileops.vivocontrol.watchkitapp
+        CODE_SIGNING_ALLOWED: "NO"

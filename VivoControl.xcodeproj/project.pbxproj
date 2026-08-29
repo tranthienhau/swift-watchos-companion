@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F18D520014CE47F0D3AB7E0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF75AC32FF683820BFA21C /* ComplicationController.swift */; };
+		12EB54F0325AF21E95AA092B /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = AE20CCB1BCC630D8D9954BDE /* Shared */; };
+		3B5E871ADB27F6B72279AF90 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA4908F0E50CD09B936B11 /* HomeView.swift */; };
+		4165325F3B91718D50DB4E5C /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = 3B91F26FC8317E81A2E88ACB /* Shared */; };
+		567AAC5AC82A26F8ED18E269 /* WatchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F170E981AE7719CE3ECC3 /* WatchHomeView.swift */; };
+		8F81E0C926489249062B4841 /* VivoControlWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA13BA2DCDAE46D96AC10D /* VivoControlWatchApp.swift */; };
+		C43584F047F33A41889D5C5B /* VivoControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0225F4DFF4B00B4D02FD9 /* VivoControlApp.swift */; };
+		CE02529B79A0F17DBBD729BA /* VivoControlWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 68D3EEAF90F56A78012AD5FD /* VivoControlWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6080E5041AAEBCCE5CA02B6 /* PhoneCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023714C3975BAAD6DD602D4 /* PhoneCommandHandler.swift */; };
+		EAA6405DB7ED664EAB4EC7D9 /* DemoDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A6436AAE03CC4CD1B4D33D /* DemoDriver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3264AEA22FAAEECE792712A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737655FF6C57FA19220408F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE7B140C0F6607C376C06A0;
+			remoteInfo = VivoControlWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		895BF5ABCB0169770E0FEBF0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE02529B79A0F17DBBD729BA /* VivoControlWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		208020DA3710C53485A72106 /* VivoControl.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VivoControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2216AE14F079B1FA3111D86B /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shared; path = Shared; sourceTree = SOURCE_ROOT; };
+		376F170E981AE7719CE3ECC3 /* WatchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHomeView.swift; sourceTree = "<group>"; };
+		3FF0225F4DFF4B00B4D02FD9 /* VivoControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivoControlApp.swift; sourceTree = "<group>"; };
+		45AF75AC32FF683820BFA21C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		59DA13BA2DCDAE46D96AC10D /* VivoControlWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivoControlWatchApp.swift; sourceTree = "<group>"; };
+		68D3EEAF90F56A78012AD5FD /* VivoControlWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivoControlWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A6436AAE03CC4CD1B4D33D /* DemoDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDriver.swift; sourceTree = "<group>"; };
+		7E978E11C1EE5001A85F0051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7FAA4908F0E50CD09B936B11 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9023714C3975BAAD6DD602D4 /* PhoneCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCommandHandler.swift; sourceTree = "<group>"; };
+		F28848159C5C7533114D7178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EBAA2680481E48992F3B8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12EB54F0325AF21E95AA092B /* Shared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1B983F2FC8D1E5CF94D65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4165325F3B91718D50DB4E5C /* Shared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CDE2E921E2A4E6AD0D9236 = {
+			isa = PBXGroup;
+			children = (
+				D2AE82B807229D8C78F0E939 /* Packages */,
+				D20FA9007F539AEB25CAF7E5 /* VivoControl */,
+				3974B8EB73D693D16213DED0 /* VivoControlWatch */,
+				5C33D6D57CF8247ADC0DEE77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3974B8EB73D693D16213DED0 /* VivoControlWatch */ = {
+			isa = PBXGroup;
+			children = (
+				45AF75AC32FF683820BFA21C /* ComplicationController.swift */,
+				70A6436AAE03CC4CD1B4D33D /* DemoDriver.swift */,
+				7E978E11C1EE5001A85F0051 /* Info.plist */,
+				59DA13BA2DCDAE46D96AC10D /* VivoControlWatchApp.swift */,
+				376F170E981AE7719CE3ECC3 /* WatchHomeView.swift */,
+			);
+			name = VivoControlWatch;
+			path = Watch/VivoControlWatch;
+			sourceTree = "<group>";
+		};
+		5C33D6D57CF8247ADC0DEE77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				208020DA3710C53485A72106 /* VivoControl.app */,
+				68D3EEAF90F56A78012AD5FD /* VivoControlWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20FA9007F539AEB25CAF7E5 /* VivoControl */ = {
+			isa = PBXGroup;
+			children = (
+				7FAA4908F0E50CD09B936B11 /* HomeView.swift */,
+				F28848159C5C7533114D7178 /* Info.plist */,
+				9023714C3975BAAD6DD602D4 /* PhoneCommandHandler.swift */,
+				3FF0225F4DFF4B00B4D02FD9 /* VivoControlApp.swift */,
+			);
+			name = VivoControl;
+			path = iOS/VivoControl;
+			sourceTree = "<group>";
+		};
+		D2AE82B807229D8C78F0E939 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2216AE14F079B1FA3111D86B /* Shared */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E649E09D8C65D3B332A545 /* VivoControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B7241AA2F23B1555698DF96 /* Build configuration list for PBXNativeTarget "VivoControl" */;
+			buildPhases = (
+				D0806D62FBFC1A170A4F7286 /* Sources */,
+				1EBAA2680481E48992F3B8CA /* Frameworks */,
+				895BF5ABCB0169770E0FEBF0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5663B009535E724F102F991 /* PBXTargetDependency */,
+			);
+			name = VivoControl;
+			packageProductDependencies = (
+				AE20CCB1BCC630D8D9954BDE /* Shared */,
+			);
+			productName = VivoControl;
+			productReference = 208020DA3710C53485A72106 /* VivoControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DE7B140C0F6607C376C06A0 /* VivoControlWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6D38D8FE7665897B05F27D /* Build configuration list for PBXNativeTarget "VivoControlWatch" */;
+			buildPhases = (
+				D406E73114AC6CA44B94EBF7 /* Sources */,
+				DB1B983F2FC8D1E5CF94D65B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VivoControlWatch;
+			packageProductDependencies = (
+				3B91F26FC8317E81A2E88ACB /* Shared */,
+			);
+			productName = VivoControlWatch;
+			productReference = 68D3EEAF90F56A78012AD5FD /* VivoControlWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		737655FF6C57FA19220408F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 000FBFAC57742D1AC9890FF3 /* Build configuration list for PBXProject "VivoControl" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 12CDE2E921E2A4E6AD0D9236;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F2A12C59A1C2394C1CE991C3 /* XCLocalSwiftPackageReference "Shared" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5C33D6D57CF8247ADC0DEE77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E649E09D8C65D3B332A545 /* VivoControl */,
+				2DE7B140C0F6607C376C06A0 /* VivoControlWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0806D62FBFC1A170A4F7286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5E871ADB27F6B72279AF90 /* HomeView.swift in Sources */,
+				E6080E5041AAEBCCE5CA02B6 /* PhoneCommandHandler.swift in Sources */,
+				C43584F047F33A41889D5C5B /* VivoControlApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D406E73114AC6CA44B94EBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F18D520014CE47F0D3AB7E0 /* ComplicationController.swift in Sources */,
+				EAA6405DB7ED664EAB4EC7D9 /* DemoDriver.swift in Sources */,
+				8F81E0C926489249062B4841 /* VivoControlWatchApp.swift in Sources */,
+				567AAC5AC82A26F8ED18E269 /* WatchHomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5663B009535E724F102F991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE7B140C0F6607C376C06A0 /* VivoControlWatch */;
+			targetProxy = C3264AEA22FAAEECE792712A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B2CA2AEE140CC98506B08B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = Watch/VivoControlWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agileops.vivocontrol.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		675F8BE3C2F5CE90520622BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		869651880D9E7F17295943C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = iOS/VivoControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.agileops.vivocontrol;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		884FC18E9800359A8064F199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = iOS/VivoControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.agileops.vivocontrol;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B7CD753727988301BC00C8C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				INFOPLIST_FILE = Watch/VivoControlWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agileops.vivocontrol.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		DADB863E7DF4268939C4B33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000FBFAC57742D1AC9890FF3 /* Build configuration list for PBXProject "VivoControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				675F8BE3C2F5CE90520622BE /* Debug */,
+				DADB863E7DF4268939C4B33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3E6D38D8FE7665897B05F27D /* Build configuration list for PBXNativeTarget "VivoControlWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2CA2AEE140CC98506B08B4 /* Debug */,
+				B7CD753727988301BC00C8C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B7241AA2F23B1555698DF96 /* Build configuration list for PBXNativeTarget "VivoControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884FC18E9800359A8064F199 /* Debug */,
+				869651880D9E7F17295943C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F2A12C59A1C2394C1CE991C3 /* XCLocalSwiftPackageReference "Shared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Shared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B91F26FC8317E81A2E88ACB /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Shared;
+		};
+		AE20CCB1BCC630D8D9954BDE /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Shared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 737655FF6C57FA19220408F4 /* Project object */;
+}
