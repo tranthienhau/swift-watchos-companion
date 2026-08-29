@@ -21,6 +21,16 @@ public final class WatchConnectivityClient: NSObject, ObservableObject {
 
     public var onCommandReceived: ((CommandEnvelope) -> Void)?
     public var onContextReceived: (([String: Any]) -> Void)?
+    /// Fired once WCSession activation completes. Sending before activation
+    /// throws, so state broadcasts must wait for this instead of onAppear.
+    public var onActivated: (() -> Void)?
+    private var activated = false
+
+    /// Runs the block after WCSession activation - immediately if the session
+    /// is already active, otherwise once activationDidCompleteWith fires.
+    public func whenActivated(_ block: @escaping () -> Void) {
+        if activated { block() } else { onActivated = block }
+    }
 
     private override init() {
         super.init()
@@ -70,7 +80,20 @@ public final class WatchConnectivityClient: NSObject, ObservableObject {
 extension WatchConnectivityClient: WCSessionDelegate {
     public nonisolated func session(_ session: WCSession,
                         activationDidCompleteWith state: WCSessionActivationState,
-                        error: Error?) {}
+                        error: Error?) {
+        guard state == .activated else { return }
+        // Deliver any context that arrived while this app was not running,
+        // then let the app push its own initial state.
+        let pending = session.receivedApplicationContext
+        Task { @MainActor in
+            if !pending.isEmpty {
+                self.lastReceivedContext = pending
+                self.onContextReceived?(pending)
+            }
+            self.activated = true
+            self.onActivated?()
+        }
+    }
 
     #if os(iOS)
     public nonisolated func sessionDidBecomeInactive(_ session: WCSession) {}
