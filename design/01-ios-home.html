@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>VivoControl - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eeedf3",
+                    "inverse-primary": "#adc6ff",
+                    "on-primary-fixed-variant": "#004493",
+                    "primary-container": "#0070eb",
+                    "background": "#faf9fe",
+                    "surface-bright": "#faf9fe",
+                    "surface-variant": "#e3e2e7",
+                    "on-primary-fixed": "#001a41",
+                    "surface": "#faf9fe",
+                    "on-tertiary-fixed-variant": "#3631b4",
+                    "secondary-fixed-dim": "#53e16f",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#fefcff",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#72fe88",
+                    "surface-container-low": "#f4f3f8",
+                    "tertiary-fixed-dim": "#c2c1ff",
+                    "surface-dim": "#dad9df",
+                    "primary-fixed": "#d8e2ff",
+                    "outline": "#717786",
+                    "inverse-surface": "#2f3034",
+                    "secondary": "#006e28",
+                    "inverse-on-surface": "#f1f0f5",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#00531c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#00732a",
+                    "on-background": "#1a1b1f",
+                    "on-tertiary-container": "#fffbff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "tertiary-fixed": "#e2dfff",
+                    "surface-tint": "#005bc1",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#6ffb85",
+                    "on-surface": "#1a1b1f",
+                    "primary": "#0058bc",
+                    "surface-container-highest": "#e3e2e7",
+                    "on-tertiary-fixed": "#0c006a",
+                    "tertiary-container": "#6664e4",
+                    "on-secondary-fixed": "#002107",
+                    "outline-variant": "#c1c6d7",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#414755",
+                    "tertiary": "#4c4aca",
+                    "surface-container-high": "#e9e7ed",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter-card": "0.75rem",
+                    "section-padding": "1.5rem",
+                    "stack-gap": "1rem",
+                    "margin-main": "1rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "title-md": ["Inter"],
+                    "display": ["Inter"]
+            },
+            "fontSize": {
+                    "headline": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.3px", "fontWeight": "600"}],
+                    "body-sm": ["15px", {"lineHeight": "20px", "letterSpacing": "-0.2px", "fontWeight": "400"}],
+                    "label-caps": ["13px", {"lineHeight": "18px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "body-lg": ["17px", {"lineHeight": "22px", "letterSpacing": "-0.4px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "letterSpacing": "0px", "fontWeight": "400"}],
+                    "title-md": ["20px", {"lineHeight": "25px", "letterSpacing": "-0.2px", "fontWeight": "600"}],
+                    "display": ["34px", {"lineHeight": "41px", "letterSpacing": "-0.4px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #F2F2F7; }
+        .card-shadow { box-shadow: 0px 4px 12px rgba(0,0,0,0.05); }
+        .active-scale:active { transform: scale(0.98); box-shadow: 0px 2px 8px rgba(0,0,0,0.1); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background font-body-sm antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface w-full top-0 sticky z-40 transition-shadow">
+<div class="flex flex-col px-margin-main py-4 w-full">
+<div class="flex justify-between items-center w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="home_pin" style="font-variation-settings: 'FILL' 1;">home_pin</span>
+<h1 class="font-display text-title-md text-primary">VivoControl</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border border-outline-variant/30 flex items-center justify-center">
+<img alt="Property Manager Avatar" class="w-full h-full object-cover" data-alt="A professional headshot of a property manager. The lighting is clean, bright, and modern. The background is a soft, out-of-focus smart home interior. The mood is trustworthy and approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoQ8r8pcu6RPbYYKy5bp-BFH-awJEL_BDVgCjWMIHxn3oGeV4bAamOswNc_H_lIjODdbkTRy0Jbl8QRsSxXlBihT-2b4QU6zyL9vcKYiQRPpcG3SfTCyx1jtCTyPoTXSIvZb5b3LDRagz8rzR27Ln5Zh_Zq67L6iuOag_8yeAVvv2kwjobN_47tgS7S5nHBu2r1pzoRzImyH4i-AXx0Zl27eBdMG0ZoV80vDuQrivg8wCcROyHVd7174QofO04Tn8FsyUTfQbRZHQ"/>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full max-w-[1200px] mx-auto px-margin-main pb-section-padding pt-6 flex flex-col gap-8">
+<!-- Header Info -->
+<section class="flex flex-col gap-1">
+<h2 class="font-display text-display">Calle del Mar 12</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+                San Juan, PR
+            </p>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-card md:gap-stack-gap">
+<!-- Left Column: Controls (Gates & Doors) -->
+<div class="col-span-1 md:col-span-7 lg:col-span-8 flex flex-col gap-6">
+<!-- Gates Section -->
+<section>
+<h3 class="font-title-md text-title-md mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">door_sliding</span>
+                        Gates
+                    </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-card">
+<!-- Main Gate Card -->
+<div class="bg-surface rounded-[20px] p-4 card-shadow flex flex-col justify-between min-h-[140px] relative overflow-hidden group">
+<div class="flex justify-between items-start w-full z-10">
+<div class="bg-surface-container w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">gate</span>
+</div>
+<div class="bg-surface-container-high px-3 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Closed</span>
+</div>
+</div>
+<div class="z-10 mt-6">
+<p class="font-headline text-headline">Main Gate</p>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Front Entrance</p>
+</div>
+<!-- Large Action Button hidden until hover/focus on desktop, visible on mobile tap area -->
+<button aria-label="Toggle Main Gate" class="absolute inset-0 w-full h-full bg-transparent z-20 cursor-pointer focus:outline-none active-scale transition-transform duration-200">
+<span class="sr-only">Toggle Main Gate</span>
+</button>
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-[20px]"></div>
+</div>
+</div>
+</section>
+<!-- Doors Section -->
+<section>
+<h3 class="font-title-md text-title-md mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">door_front</span>
+                        Doors
+                    </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-card">
+<!-- Front Door Card -->
+<div class="bg-surface rounded-[20px] p-4 card-shadow flex flex-col justify-between min-h-[140px] relative overflow-hidden group border-2 border-transparent hover:border-primary/20 transition-colors">
+<div class="flex justify-between items-start w-full z-10">
+<div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Locked</span>
+</div>
+</div>
+<div class="z-10 mt-6">
+<p class="font-headline text-headline">Front Door</p>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Main Access</p>
+</div>
+<!-- Action Area -->
+<button aria-label="Unlock Front Door" class="absolute inset-0 w-full h-full bg-transparent z-20 cursor-pointer focus:outline-none active-scale transition-transform duration-200">
+<span class="sr-only">Unlock Front Door</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quick Action Banner -->
+<button class="mt-2 w-full bg-primary text-on-primary rounded-xl py-4 px-6 flex justify-center items-center gap-2 active-scale transition-transform shadow-sm hover:shadow-md font-body-lg text-body-lg font-semibold">
+<span class="material-symbols-outlined">lock_open</span>
+                    Unlock All Access Points
+                </button>
+</div>
+<!-- Right Column: Audit Log -->
+<div class="col-span-1 md:col-span-5 lg:col-span-4 flex flex-col">
+<section class="bg-surface rounded-[20px] card-shadow p-6 flex-1 h-full flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-title-md text-title-md flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">history</span>
+                            Audit Log
+                        </h3>
+<button class="text-primary font-label-caps text-label-caps uppercase hover:underline">View All</button>
+</div>
+<div class="flex flex-col gap-stack-gap flex-1">
+<!-- Log Item 1 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">watch</span>
+</div>
+<div class="flex-1 min-w-0 border-b border-surface-container-highest pb-4">
+<div class="flex justify-between items-baseline mb-1">
+<p class="font-body-sm text-body-sm font-semibold truncate">open_gate</p>
+<p class="font-caption text-caption text-outline whitespace-nowrap ml-2">10:15 AM</p>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    Source: Watch
+                                </p>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">smartphone</span>
+</div>
+<div class="flex-1 min-w-0 border-b border-surface-container-highest pb-4">
+<div class="flex justify-between items-baseline mb-1">
+<p class="font-body-sm text-body-sm font-semibold truncate">gate_open</p>
+<p class="font-caption text-caption text-outline whitespace-nowrap ml-2">09:42 AM</p>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    Source: iPhone
+                                </p>
+</div>
+</div>
+<!-- Log Item 3 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">watch</span>
+</div>
+<div class="flex-1 min-w-0 pb-2">
+<div class="flex justify-between items-baseline mb-1">
+<p class="font-body-sm text-body-sm font-semibold text-primary">unlock_door</p>
+<p class="font-caption text-caption text-outline whitespace-nowrap ml-2">08:30 AM</p>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                    Source: Watch
+                                </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-surface-container-lowest shadow-[0px_-4px_12px_rgba(0,0,0,0.05)] rounded-t-xl z-50 md:hidden">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-5 py-1 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-caps text-label-caps mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-all px-5 py-1">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-caps text-label-caps mt-1">Devices</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-all px-5 py-1">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-label-caps text-label-caps mt-1">Activity</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-all px-5 py-1">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-caps text-label-caps mt-1">Settings</span>
+</button>
+</nav>
+</body></html>
