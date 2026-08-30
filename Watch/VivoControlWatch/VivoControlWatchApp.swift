@@ -14,6 +14,11 @@ struct VivoControlWatchApp: App {
                             state.apply(context)
                         }
                     }
+                    let pending = WatchConnectivityClient.shared.lastReceivedContext
+                    if !pending.isEmpty {
+                        state.apply(pending)
+                    }
+                    DemoDriver.runIfRequested(state: state)
                 }
         }
     }
@@ -25,11 +30,11 @@ final class WatchAppState: ObservableObject {
     @Published var gateState: GateState = .unknown
     @Published var doorLocked: Bool = true
 
-    // Identifiers come from the iPhone via context in production. Hard-coded
-    // here so the POC builds without an extra round-trip.
-    let propertyID = UUID()
-    let gateID = UUID()
-    let doorID = UUID()
+    // Identifiers arrive from the iPhone via application context so commands
+    // reference the same entities the iPhone seeded.
+    var propertyID = UUID()
+    var gateID = UUID()
+    var doorID = UUID()
 
     func apply(_ context: [String: Any]) {
         if let name = context["property_name"] as? String { propertyName = name }
@@ -37,5 +42,8 @@ final class WatchAppState: ObservableObject {
             gateState = state
         }
         if let locked = context["door_locked"] as? Bool { doorLocked = locked }
+        if let raw = context["property_id"] as? String, let id = UUID(uuidString: raw) { propertyID = id }
+        if let raw = context["gate_id"] as? String, let id = UUID(uuidString: raw) { gateID = id }
+        if let raw = context["door_id"] as? String, let id = UUID(uuidString: raw) { doorID = id }
     }
 }

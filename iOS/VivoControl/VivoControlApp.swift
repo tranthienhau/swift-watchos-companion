@@ -26,17 +26,14 @@ struct VivoControlApp: App {
                             PhoneCommandHandler(viewModel: viewModel).handle(envelope)
                         }
                     }
-                    broadcastInitialState()
+                    WatchConnectivityClient.shared.whenActivated {
+                        broadcastInitialState()
+                    }
                 }
         }
     }
 
     private func broadcastInitialState() {
-        let context: [String: Any] = [
-            "property_name": viewModel.property.name,
-            "gate_state": viewModel.property.gates.first?.state.rawValue ?? "unknown",
-            "door_locked": viewModel.property.doors.first?.locked ?? true,
-        ]
-        try? WatchConnectivityClient.shared.updateContext(context)
+        try? WatchConnectivityClient.shared.updateContext(viewModel.contextPayload)
     }
 }

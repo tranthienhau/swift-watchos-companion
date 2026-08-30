@@ -34,6 +34,20 @@ public final class PropertyViewModel: ObservableObject {
     public func record(_ envelope: CommandEnvelope) {
         auditLog.append(.init(action: envelope.command.auditLabel, source: .watch))
     }
+
+    /// Snapshot broadcast to the Watch via updateApplicationContext. Carries
+    /// entity IDs so Watch-issued commands reference the entities the iPhone
+    /// actually owns.
+    public var contextPayload: [String: Any] {
+        [
+            "property_name": property.name,
+            "property_id": property.id.uuidString,
+            "gate_state": property.gates.first?.state.rawValue ?? "unknown",
+            "gate_id": property.gates.first?.id.uuidString ?? "",
+            "door_locked": property.doors.first?.locked ?? true,
+            "door_id": property.doors.first?.id.uuidString ?? "",
+        ]
+    }
 }
 
 public struct AuditEntry: Identifiable, Hashable, Sendable {
