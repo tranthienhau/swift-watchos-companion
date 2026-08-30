@@ -102,6 +102,14 @@ flowchart TD
     Shared --> Watch
 ```
 
+## Design
+
+The UI follows a Google Stitch design (see [`design/`](design/)) - iOS property home plus Watch idle/active states, sharing one design system (deep blue for security actions, green for open states, red for close actions, Inter type scale).
+
+| iOS Home | Watch Idle | Watch Active |
+|---|---|---|
+| ![iOS design](design/01-ios-home.png) | ![Watch idle design](design/02-watch-idle.png) | ![Watch active design](design/03-watch-active.png) |
+
 ## Mock data
 
 All data is seeded in-memory in `VivoControlApp.init()` - no server or network calls are required. The seed creates one `Property` with:
